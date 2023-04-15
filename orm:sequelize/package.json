@@ -1,0 +1,25 @@
+{
+  "name": "tugas-express",
+  "version": "1.0.0",
+  "description": "ini API bootcamp harisenin untuk Tugas Express.Js (Ardy Yusuf)",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "node src/index.js",
+    "migrate": "knex migrate:latest --knexfile src/models/knexfile.js",
+    "migrate:down": "knex migrate:down --knexfile src/models/knexfile.js"
+  },
+  "author": "Ardy Yusuf",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "latest"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "knex": "^2.4.2",
+    "mysql2": "^3.2.0",
+    "sequelize": "^6.6.5"
+  }
+}
